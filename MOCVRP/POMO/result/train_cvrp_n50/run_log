@@ -1,0 +1,663 @@
+[2023-09-05 06:24:05] train_mocvrp_n50.py(116) : DEBUG_MODE: False
+[2023-09-05 06:24:05] train_mocvrp_n50.py(117) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2023-09-05 06:24:05] train_mocvrp_n50.py(118) : env_params{'problem_size': 50, 'pomo_size': 50}
+[2023-09-05 06:24:05] train_mocvrp_n50.py(118) : model_params{'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'encoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'logit_clipping': 10, 'ff_hidden_dim': 512, 'eval_type': 'argmax'}
+[2023-09-05 06:24:05] train_mocvrp_n50.py(118) : optimizer_params{'optimizer': {'lr': 0.0001, 'weight_decay': 1e-06}, 'scheduler': {'milestones': [180], 'gamma': 0.1}}
+[2023-09-05 06:24:05] train_mocvrp_n50.py(118) : trainer_params{'use_cuda': True, 'cuda_device_num': 0, 'epochs': 200, 'train_episodes': 100000, 'train_batch_size': 64, 'prev_model_path': None, 'logging': {'model_save_interval': 5, 'img_save_interval': 100, 'log_image_params_1': {'json_foldername': 'log_image_style', 'filename': 'style_cvrp_50.json'}, 'log_image_params_2': {'json_foldername': 'log_image_style', 'filename': 'style_loss_1.json'}}, 'model_load': {'enable': False, 'path': './result/saved_CVRP50_model', 'epoch': 200}}
+[2023-09-05 06:24:05] train_mocvrp_n50.py(118) : logger_params{'log_file': {'desc': 'train_cvrp_n50', 'filename': 'run_log', 'filepath': './result/20230905_062404_train_cvrp_n50'}}
+[2023-09-05 06:24:06] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 06:24:07] MOCVRPTrainer.py(132) : Epoch   1: Train  64/100000(0.1%)  Obj1 Score: 37.6896, Obj2 Score: 5.1505,  Loss: -0.3328
+[2023-09-05 06:24:07] MOCVRPTrainer.py(132) : Epoch   1: Train 128/100000(0.1%)  Obj1 Score: 31.8472, Obj2 Score: 5.3617,  Loss: -0.4108
+[2023-09-05 06:24:08] MOCVRPTrainer.py(132) : Epoch   1: Train 192/100000(0.2%)  Obj1 Score: 28.8405, Obj2 Score: 5.1633,  Loss: -0.5261
+[2023-09-05 06:24:08] MOCVRPTrainer.py(132) : Epoch   1: Train 256/100000(0.3%)  Obj1 Score: 26.5130, Obj2 Score: 4.8893,  Loss: -0.5798
+[2023-09-05 06:24:08] MOCVRPTrainer.py(132) : Epoch   1: Train 320/100000(0.3%)  Obj1 Score: 24.7898, Obj2 Score: 4.6572,  Loss: -0.6398
+[2023-09-05 06:24:08] MOCVRPTrainer.py(132) : Epoch   1: Train 384/100000(0.4%)  Obj1 Score: 23.5723, Obj2 Score: 4.4696,  Loss: -0.6976
+[2023-09-05 06:24:08] MOCVRPTrainer.py(132) : Epoch   1: Train 448/100000(0.4%)  Obj1 Score: 22.6748, Obj2 Score: 4.3450,  Loss: -0.7264
+[2023-09-05 06:24:08] MOCVRPTrainer.py(132) : Epoch   1: Train 512/100000(0.5%)  Obj1 Score: 21.9581, Obj2 Score: 4.2413,  Loss: -0.7497
+[2023-09-05 06:24:08] MOCVRPTrainer.py(132) : Epoch   1: Train 576/100000(0.6%)  Obj1 Score: 21.3849, Obj2 Score: 4.1576,  Loss: -0.7781
+[2023-09-05 06:24:08] MOCVRPTrainer.py(132) : Epoch   1: Train 640/100000(0.6%)  Obj1 Score: 20.9090, Obj2 Score: 4.0937,  Loss: -0.8024
+[2023-09-05 06:27:39] MOCVRPTrainer.py(137) : Epoch   1: Train (100%)  Obj1 Score: 12.0422, Obj2 Score: 2.4549,  Loss: -0.7889
+[2023-09-05 06:27:39] MOCVRPTrainer.py(79) : Epoch   1/200: Time Est.: Elapsed[3.55m], Remain[11.78h]
+[2023-09-05 06:27:39] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 06:27:39] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 06:31:05] MOCVRPTrainer.py(137) : Epoch   2: Train (100%)  Obj1 Score: 11.3627, Obj2 Score: 2.3313,  Loss: -0.4385
+[2023-09-05 06:31:05] MOCVRPTrainer.py(79) : Epoch   2/200: Time Est.: Elapsed[6.98m], Remain[11.52h]
+[2023-09-05 06:31:05] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 06:34:32] MOCVRPTrainer.py(137) : Epoch   3: Train (100%)  Obj1 Score: 11.1971, Obj2 Score: 2.3015,  Loss: -0.3115
+[2023-09-05 06:34:32] MOCVRPTrainer.py(79) : Epoch   3/200: Time Est.: Elapsed[10.44m], Remain[11.42h]
+[2023-09-05 06:34:32] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 06:38:13] MOCVRPTrainer.py(137) : Epoch   4: Train (100%)  Obj1 Score: 11.1524, Obj2 Score: 2.2909,  Loss: -0.2639
+[2023-09-05 06:38:13] MOCVRPTrainer.py(79) : Epoch   4/200: Time Est.: Elapsed[14.12m], Remain[11.53h]
+[2023-09-05 06:38:13] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 06:41:54] MOCVRPTrainer.py(137) : Epoch   5: Train (100%)  Obj1 Score: 11.3127, Obj2 Score: 2.2804,  Loss: -0.2394
+[2023-09-05 06:41:54] MOCVRPTrainer.py(79) : Epoch   5/200: Time Est.: Elapsed[17.80m], Remain[11.57h]
+[2023-09-05 06:41:54] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 06:41:54] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 06:45:44] MOCVRPTrainer.py(137) : Epoch   6: Train (100%)  Obj1 Score: 11.6636, Obj2 Score: 2.2744,  Loss: -0.2246
+[2023-09-05 06:45:44] MOCVRPTrainer.py(79) : Epoch   6/200: Time Est.: Elapsed[21.64m], Remain[11.66h]
+[2023-09-05 06:45:44] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 06:49:38] MOCVRPTrainer.py(137) : Epoch   7: Train (100%)  Obj1 Score: 11.7770, Obj2 Score: 2.2685,  Loss: -0.2103
+[2023-09-05 06:49:38] MOCVRPTrainer.py(79) : Epoch   7/200: Time Est.: Elapsed[25.53m], Remain[11.73h]
+[2023-09-05 06:49:38] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 06:53:34] MOCVRPTrainer.py(137) : Epoch   8: Train (100%)  Obj1 Score: 11.7981, Obj2 Score: 2.2644,  Loss: -0.2018
+[2023-09-05 06:53:34] MOCVRPTrainer.py(79) : Epoch   8/200: Time Est.: Elapsed[29.46m], Remain[11.79h]
+[2023-09-05 06:53:34] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 06:57:31] MOCVRPTrainer.py(137) : Epoch   9: Train (100%)  Obj1 Score: 11.8047, Obj2 Score: 2.2629,  Loss: -0.1956
+[2023-09-05 06:57:31] MOCVRPTrainer.py(79) : Epoch   9/200: Time Est.: Elapsed[33.42m], Remain[11.82h]
+[2023-09-05 06:57:31] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 07:01:30] MOCVRPTrainer.py(137) : Epoch  10: Train (100%)  Obj1 Score: 11.8020, Obj2 Score: 2.2623,  Loss: -0.1887
+[2023-09-05 07:01:30] MOCVRPTrainer.py(79) : Epoch  10/200: Time Est.: Elapsed[37.40m], Remain[11.84h]
+[2023-09-05 07:01:30] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 07:01:30] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 07:05:46] MOCVRPTrainer.py(137) : Epoch  11: Train (100%)  Obj1 Score: 11.8034, Obj2 Score: 2.2622,  Loss: -0.1847
+[2023-09-05 07:05:46] MOCVRPTrainer.py(79) : Epoch  11/200: Time Est.: Elapsed[41.66m], Remain[11.93h]
+[2023-09-05 07:05:46] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 07:09:47] MOCVRPTrainer.py(137) : Epoch  12: Train (100%)  Obj1 Score: 11.7989, Obj2 Score: 2.2586,  Loss: -0.1786
+[2023-09-05 07:09:47] MOCVRPTrainer.py(79) : Epoch  12/200: Time Est.: Elapsed[45.69m], Remain[11.93h]
+[2023-09-05 07:09:47] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 07:13:44] MOCVRPTrainer.py(137) : Epoch  13: Train (100%)  Obj1 Score: 11.7711, Obj2 Score: 2.2593,  Loss: -0.1767
+[2023-09-05 07:13:44] MOCVRPTrainer.py(79) : Epoch  13/200: Time Est.: Elapsed[49.64m], Remain[11.90h]
+[2023-09-05 07:13:44] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 07:17:38] MOCVRPTrainer.py(137) : Epoch  14: Train (100%)  Obj1 Score: 11.7788, Obj2 Score: 2.2581,  Loss: -0.1737
+[2023-09-05 07:17:38] MOCVRPTrainer.py(79) : Epoch  14/200: Time Est.: Elapsed[53.54m], Remain[11.86h]
+[2023-09-05 07:17:38] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 07:21:35] MOCVRPTrainer.py(137) : Epoch  15: Train (100%)  Obj1 Score: 11.8042, Obj2 Score: 2.2555,  Loss: -0.1705
+[2023-09-05 07:21:35] MOCVRPTrainer.py(79) : Epoch  15/200: Time Est.: Elapsed[57.47m], Remain[11.81h]
+[2023-09-05 07:21:35] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 07:21:35] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 07:25:35] MOCVRPTrainer.py(137) : Epoch  16: Train (100%)  Obj1 Score: 11.7567, Obj2 Score: 2.2550,  Loss: -0.1688
+[2023-09-05 07:25:35] MOCVRPTrainer.py(79) : Epoch  16/200: Time Est.: Elapsed[1.02h], Remain[11.78h]
+[2023-09-05 07:25:35] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 07:29:47] MOCVRPTrainer.py(137) : Epoch  17: Train (100%)  Obj1 Score: 11.7921, Obj2 Score: 2.2543,  Loss: -0.1639
+[2023-09-05 07:29:47] MOCVRPTrainer.py(79) : Epoch  17/200: Time Est.: Elapsed[1.09h], Remain[11.78h]
+[2023-09-05 07:29:47] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 07:34:05] MOCVRPTrainer.py(137) : Epoch  18: Train (100%)  Obj1 Score: 11.7727, Obj2 Score: 2.2556,  Loss: -0.1624
+[2023-09-05 07:34:05] MOCVRPTrainer.py(79) : Epoch  18/200: Time Est.: Elapsed[1.17h], Remain[11.79h]
+[2023-09-05 07:34:05] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 07:38:13] MOCVRPTrainer.py(137) : Epoch  19: Train (100%)  Obj1 Score: 11.7576, Obj2 Score: 2.2519,  Loss: -0.1599
+[2023-09-05 07:38:13] MOCVRPTrainer.py(79) : Epoch  19/200: Time Est.: Elapsed[1.24h], Remain[11.77h]
+[2023-09-05 07:38:13] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 07:42:16] MOCVRPTrainer.py(137) : Epoch  20: Train (100%)  Obj1 Score: 11.7650, Obj2 Score: 2.2522,  Loss: -0.1599
+[2023-09-05 07:42:16] MOCVRPTrainer.py(79) : Epoch  20/200: Time Est.: Elapsed[1.30h], Remain[11.72h]
+[2023-09-05 07:42:16] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 07:42:16] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 07:46:29] MOCVRPTrainer.py(137) : Epoch  21: Train (100%)  Obj1 Score: 11.7515, Obj2 Score: 2.2496,  Loss: -0.1569
+[2023-09-05 07:46:29] MOCVRPTrainer.py(79) : Epoch  21/200: Time Est.: Elapsed[1.37h], Remain[11.70h]
+[2023-09-05 07:46:29] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 07:50:56] MOCVRPTrainer.py(137) : Epoch  22: Train (100%)  Obj1 Score: 11.7317, Obj2 Score: 2.2506,  Loss: -0.1560
+[2023-09-05 07:50:56] MOCVRPTrainer.py(79) : Epoch  22/200: Time Est.: Elapsed[1.45h], Remain[11.71h]
+[2023-09-05 07:50:56] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 07:55:13] MOCVRPTrainer.py(137) : Epoch  23: Train (100%)  Obj1 Score: 11.7379, Obj2 Score: 2.2502,  Loss: -0.1559
+[2023-09-05 07:55:13] MOCVRPTrainer.py(79) : Epoch  23/200: Time Est.: Elapsed[1.52h], Remain[11.69h]
+[2023-09-05 07:55:13] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 07:59:19] MOCVRPTrainer.py(137) : Epoch  24: Train (100%)  Obj1 Score: 11.7397, Obj2 Score: 2.2504,  Loss: -0.1555
+[2023-09-05 07:59:19] MOCVRPTrainer.py(79) : Epoch  24/200: Time Est.: Elapsed[1.59h], Remain[11.64h]
+[2023-09-05 07:59:19] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 08:03:25] MOCVRPTrainer.py(137) : Epoch  25: Train (100%)  Obj1 Score: 11.7054, Obj2 Score: 2.2504,  Loss: -0.1538
+[2023-09-05 08:03:25] MOCVRPTrainer.py(79) : Epoch  25/200: Time Est.: Elapsed[1.66h], Remain[11.59h]
+[2023-09-05 08:03:25] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 08:03:25] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 08:07:31] MOCVRPTrainer.py(137) : Epoch  26: Train (100%)  Obj1 Score: 11.7166, Obj2 Score: 2.2486,  Loss: -0.1514
+[2023-09-05 08:07:31] MOCVRPTrainer.py(79) : Epoch  26/200: Time Est.: Elapsed[1.72h], Remain[11.53h]
+[2023-09-05 08:07:31] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 08:11:29] MOCVRPTrainer.py(137) : Epoch  27: Train (100%)  Obj1 Score: 11.7240, Obj2 Score: 2.2497,  Loss: -0.1504
+[2023-09-05 08:11:29] MOCVRPTrainer.py(79) : Epoch  27/200: Time Est.: Elapsed[1.79h], Remain[11.47h]
+[2023-09-05 08:11:29] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 08:15:29] MOCVRPTrainer.py(137) : Epoch  28: Train (100%)  Obj1 Score: 11.7198, Obj2 Score: 2.2483,  Loss: -0.1488
+[2023-09-05 08:15:29] MOCVRPTrainer.py(79) : Epoch  28/200: Time Est.: Elapsed[1.86h], Remain[11.40h]
+[2023-09-05 08:15:29] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 08:19:35] MOCVRPTrainer.py(137) : Epoch  29: Train (100%)  Obj1 Score: 11.7348, Obj2 Score: 2.2491,  Loss: -0.1493
+[2023-09-05 08:19:35] MOCVRPTrainer.py(79) : Epoch  29/200: Time Est.: Elapsed[1.92h], Remain[11.35h]
+[2023-09-05 08:19:35] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 08:23:40] MOCVRPTrainer.py(137) : Epoch  30: Train (100%)  Obj1 Score: 11.6950, Obj2 Score: 2.2475,  Loss: -0.1483
+[2023-09-05 08:23:40] MOCVRPTrainer.py(79) : Epoch  30/200: Time Est.: Elapsed[1.99h], Remain[11.29h]
+[2023-09-05 08:23:40] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 08:23:40] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 08:27:41] MOCVRPTrainer.py(137) : Epoch  31: Train (100%)  Obj1 Score: 11.7130, Obj2 Score: 2.2475,  Loss: -0.1489
+[2023-09-05 08:27:41] MOCVRPTrainer.py(79) : Epoch  31/200: Time Est.: Elapsed[2.06h], Remain[11.23h]
+[2023-09-05 08:27:41] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 08:31:42] MOCVRPTrainer.py(137) : Epoch  32: Train (100%)  Obj1 Score: 11.7001, Obj2 Score: 2.2473,  Loss: -0.1476
+[2023-09-05 08:31:42] MOCVRPTrainer.py(79) : Epoch  32/200: Time Est.: Elapsed[2.13h], Remain[11.17h]
+[2023-09-05 08:31:42] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 08:35:42] MOCVRPTrainer.py(137) : Epoch  33: Train (100%)  Obj1 Score: 11.6916, Obj2 Score: 2.2479,  Loss: -0.1467
+[2023-09-05 08:35:42] MOCVRPTrainer.py(79) : Epoch  33/200: Time Est.: Elapsed[2.19h], Remain[11.10h]
+[2023-09-05 08:35:42] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 08:40:09] MOCVRPTrainer.py(137) : Epoch  34: Train (100%)  Obj1 Score: 11.7220, Obj2 Score: 2.2477,  Loss: -0.1460
+[2023-09-05 08:40:09] MOCVRPTrainer.py(79) : Epoch  34/200: Time Est.: Elapsed[2.27h], Remain[11.07h]
+[2023-09-05 08:40:09] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 08:44:54] MOCVRPTrainer.py(137) : Epoch  35: Train (100%)  Obj1 Score: 11.6736, Obj2 Score: 2.2486,  Loss: -0.1458
+[2023-09-05 08:44:54] MOCVRPTrainer.py(79) : Epoch  35/200: Time Est.: Elapsed[2.35h], Remain[11.06h]
+[2023-09-05 08:44:54] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 08:44:54] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 08:49:57] MOCVRPTrainer.py(137) : Epoch  36: Train (100%)  Obj1 Score: 11.7081, Obj2 Score: 2.2472,  Loss: -0.1457
+[2023-09-05 08:49:57] MOCVRPTrainer.py(79) : Epoch  36/200: Time Est.: Elapsed[2.43h], Remain[11.07h]
+[2023-09-05 08:49:57] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 08:54:52] MOCVRPTrainer.py(137) : Epoch  37: Train (100%)  Obj1 Score: 11.6915, Obj2 Score: 2.2482,  Loss: -0.1447
+[2023-09-05 08:54:52] MOCVRPTrainer.py(79) : Epoch  37/200: Time Est.: Elapsed[2.51h], Remain[11.07h]
+[2023-09-05 08:54:52] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 08:59:41] MOCVRPTrainer.py(137) : Epoch  38: Train (100%)  Obj1 Score: 11.6670, Obj2 Score: 2.2487,  Loss: -0.1435
+[2023-09-05 08:59:41] MOCVRPTrainer.py(79) : Epoch  38/200: Time Est.: Elapsed[2.59h], Remain[11.05h]
+[2023-09-05 08:59:41] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 09:04:28] MOCVRPTrainer.py(137) : Epoch  39: Train (100%)  Obj1 Score: 11.6750, Obj2 Score: 2.2481,  Loss: -0.1436
+[2023-09-05 09:04:28] MOCVRPTrainer.py(79) : Epoch  39/200: Time Est.: Elapsed[2.67h], Remain[11.03h]
+[2023-09-05 09:04:28] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 09:09:08] MOCVRPTrainer.py(137) : Epoch  40: Train (100%)  Obj1 Score: 11.6863, Obj2 Score: 2.2484,  Loss: -0.1424
+[2023-09-05 09:09:08] MOCVRPTrainer.py(79) : Epoch  40/200: Time Est.: Elapsed[2.75h], Remain[11.00h]
+[2023-09-05 09:09:08] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 09:09:08] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 09:13:43] MOCVRPTrainer.py(137) : Epoch  41: Train (100%)  Obj1 Score: 11.6869, Obj2 Score: 2.2453,  Loss: -0.1426
+[2023-09-05 09:13:43] MOCVRPTrainer.py(79) : Epoch  41/200: Time Est.: Elapsed[2.83h], Remain[10.96h]
+[2023-09-05 09:13:43] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 09:18:28] MOCVRPTrainer.py(137) : Epoch  42: Train (100%)  Obj1 Score: 11.6600, Obj2 Score: 2.2482,  Loss: -0.1419
+[2023-09-05 09:18:28] MOCVRPTrainer.py(79) : Epoch  42/200: Time Est.: Elapsed[2.91h], Remain[10.93h]
+[2023-09-05 09:18:28] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 09:22:49] MOCVRPTrainer.py(137) : Epoch  43: Train (100%)  Obj1 Score: 11.6887, Obj2 Score: 2.2471,  Loss: -0.1406
+[2023-09-05 09:22:49] MOCVRPTrainer.py(79) : Epoch  43/200: Time Est.: Elapsed[2.98h], Remain[10.88h]
+[2023-09-05 09:22:49] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 09:26:47] MOCVRPTrainer.py(137) : Epoch  44: Train (100%)  Obj1 Score: 11.6795, Obj2 Score: 2.2468,  Loss: -0.1407
+[2023-09-05 09:26:47] MOCVRPTrainer.py(79) : Epoch  44/200: Time Est.: Elapsed[3.04h], Remain[10.79h]
+[2023-09-05 09:26:47] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 09:30:44] MOCVRPTrainer.py(137) : Epoch  45: Train (100%)  Obj1 Score: 11.6526, Obj2 Score: 2.2464,  Loss: -0.1391
+[2023-09-05 09:30:44] MOCVRPTrainer.py(79) : Epoch  45/200: Time Est.: Elapsed[3.11h], Remain[10.71h]
+[2023-09-05 09:30:44] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 09:30:44] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 09:34:42] MOCVRPTrainer.py(137) : Epoch  46: Train (100%)  Obj1 Score: 11.6779, Obj2 Score: 2.2470,  Loss: -0.1397
+[2023-09-05 09:34:42] MOCVRPTrainer.py(79) : Epoch  46/200: Time Est.: Elapsed[3.18h], Remain[10.64h]
+[2023-09-05 09:34:42] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 09:38:42] MOCVRPTrainer.py(137) : Epoch  47: Train (100%)  Obj1 Score: 11.6722, Obj2 Score: 2.2458,  Loss: -0.1387
+[2023-09-05 09:38:42] MOCVRPTrainer.py(79) : Epoch  47/200: Time Est.: Elapsed[3.24h], Remain[10.56h]
+[2023-09-05 09:38:42] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 09:42:46] MOCVRPTrainer.py(137) : Epoch  48: Train (100%)  Obj1 Score: 11.6803, Obj2 Score: 2.2472,  Loss: -0.1377
+[2023-09-05 09:42:46] MOCVRPTrainer.py(79) : Epoch  48/200: Time Est.: Elapsed[3.31h], Remain[10.48h]
+[2023-09-05 09:42:46] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 09:46:43] MOCVRPTrainer.py(137) : Epoch  49: Train (100%)  Obj1 Score: 11.6599, Obj2 Score: 2.2450,  Loss: -0.1372
+[2023-09-05 09:46:43] MOCVRPTrainer.py(79) : Epoch  49/200: Time Est.: Elapsed[3.38h], Remain[10.41h]
+[2023-09-05 09:46:43] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 09:50:41] MOCVRPTrainer.py(137) : Epoch  50: Train (100%)  Obj1 Score: 11.6564, Obj2 Score: 2.2453,  Loss: -0.1375
+[2023-09-05 09:50:41] MOCVRPTrainer.py(79) : Epoch  50/200: Time Est.: Elapsed[3.44h], Remain[10.33h]
+[2023-09-05 09:50:41] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 09:50:41] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 09:54:43] MOCVRPTrainer.py(137) : Epoch  51: Train (100%)  Obj1 Score: 11.6759, Obj2 Score: 2.2434,  Loss: -0.1372
+[2023-09-05 09:54:43] MOCVRPTrainer.py(79) : Epoch  51/200: Time Est.: Elapsed[3.51h], Remain[10.26h]
+[2023-09-05 09:54:43] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 09:58:44] MOCVRPTrainer.py(137) : Epoch  52: Train (100%)  Obj1 Score: 11.6501, Obj2 Score: 2.2464,  Loss: -0.1365
+[2023-09-05 09:58:44] MOCVRPTrainer.py(79) : Epoch  52/200: Time Est.: Elapsed[3.58h], Remain[10.18h]
+[2023-09-05 09:58:44] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 10:02:44] MOCVRPTrainer.py(137) : Epoch  53: Train (100%)  Obj1 Score: 11.6341, Obj2 Score: 2.2432,  Loss: -0.1363
+[2023-09-05 10:02:44] MOCVRPTrainer.py(79) : Epoch  53/200: Time Est.: Elapsed[3.64h], Remain[10.11h]
+[2023-09-05 10:02:44] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 10:06:41] MOCVRPTrainer.py(137) : Epoch  54: Train (100%)  Obj1 Score: 11.6279, Obj2 Score: 2.2457,  Loss: -0.1356
+[2023-09-05 10:06:41] MOCVRPTrainer.py(79) : Epoch  54/200: Time Est.: Elapsed[3.71h], Remain[10.03h]
+[2023-09-05 10:06:41] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 10:10:41] MOCVRPTrainer.py(137) : Epoch  55: Train (100%)  Obj1 Score: 11.6377, Obj2 Score: 2.2447,  Loss: -0.1364
+[2023-09-05 10:10:41] MOCVRPTrainer.py(79) : Epoch  55/200: Time Est.: Elapsed[3.78h], Remain[9.96h]
+[2023-09-05 10:10:41] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 10:10:41] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 10:14:38] MOCVRPTrainer.py(137) : Epoch  56: Train (100%)  Obj1 Score: 11.6284, Obj2 Score: 2.2452,  Loss: -0.1351
+[2023-09-05 10:14:38] MOCVRPTrainer.py(79) : Epoch  56/200: Time Est.: Elapsed[3.84h], Remain[9.88h]
+[2023-09-05 10:14:38] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 10:18:43] MOCVRPTrainer.py(137) : Epoch  57: Train (100%)  Obj1 Score: 11.6527, Obj2 Score: 2.2428,  Loss: -0.1342
+[2023-09-05 10:18:43] MOCVRPTrainer.py(79) : Epoch  57/200: Time Est.: Elapsed[3.91h], Remain[9.81h]
+[2023-09-05 10:18:43] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 10:22:38] MOCVRPTrainer.py(137) : Epoch  58: Train (100%)  Obj1 Score: 11.6648, Obj2 Score: 2.2445,  Loss: -0.1336
+[2023-09-05 10:22:38] MOCVRPTrainer.py(79) : Epoch  58/200: Time Est.: Elapsed[3.98h], Remain[9.73h]
+[2023-09-05 10:22:38] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 10:26:32] MOCVRPTrainer.py(137) : Epoch  59: Train (100%)  Obj1 Score: 11.6514, Obj2 Score: 2.2461,  Loss: -0.1340
+[2023-09-05 10:26:32] MOCVRPTrainer.py(79) : Epoch  59/200: Time Est.: Elapsed[4.04h], Remain[9.66h]
+[2023-09-05 10:26:32] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 10:30:33] MOCVRPTrainer.py(137) : Epoch  60: Train (100%)  Obj1 Score: 11.6353, Obj2 Score: 2.2449,  Loss: -0.1329
+[2023-09-05 10:30:33] MOCVRPTrainer.py(79) : Epoch  60/200: Time Est.: Elapsed[4.11h], Remain[9.58h]
+[2023-09-05 10:30:33] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 10:30:33] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 10:34:38] MOCVRPTrainer.py(137) : Epoch  61: Train (100%)  Obj1 Score: 11.6576, Obj2 Score: 2.2443,  Loss: -0.1325
+[2023-09-05 10:34:38] MOCVRPTrainer.py(79) : Epoch  61/200: Time Est.: Elapsed[4.18h], Remain[9.51h]
+[2023-09-05 10:34:38] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 10:38:59] MOCVRPTrainer.py(137) : Epoch  62: Train (100%)  Obj1 Score: 11.6334, Obj2 Score: 2.2447,  Loss: -0.1327
+[2023-09-05 10:38:59] MOCVRPTrainer.py(79) : Epoch  62/200: Time Est.: Elapsed[4.25h], Remain[9.46h]
+[2023-09-05 10:38:59] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 10:43:28] MOCVRPTrainer.py(137) : Epoch  63: Train (100%)  Obj1 Score: 11.6517, Obj2 Score: 2.2451,  Loss: -0.1334
+[2023-09-05 10:43:28] MOCVRPTrainer.py(79) : Epoch  63/200: Time Est.: Elapsed[4.32h], Remain[9.40h]
+[2023-09-05 10:43:28] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 10:48:02] MOCVRPTrainer.py(137) : Epoch  64: Train (100%)  Obj1 Score: 11.6305, Obj2 Score: 2.2442,  Loss: -0.1324
+[2023-09-05 10:48:02] MOCVRPTrainer.py(79) : Epoch  64/200: Time Est.: Elapsed[4.40h], Remain[9.35h]
+[2023-09-05 10:48:02] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 10:52:43] MOCVRPTrainer.py(137) : Epoch  65: Train (100%)  Obj1 Score: 11.6324, Obj2 Score: 2.2437,  Loss: -0.1316
+[2023-09-05 10:52:43] MOCVRPTrainer.py(79) : Epoch  65/200: Time Est.: Elapsed[4.48h], Remain[9.30h]
+[2023-09-05 10:52:43] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 10:52:43] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 10:58:05] MOCVRPTrainer.py(137) : Epoch  66: Train (100%)  Obj1 Score: 11.6552, Obj2 Score: 2.2431,  Loss: -0.1311
+[2023-09-05 10:58:05] MOCVRPTrainer.py(79) : Epoch  66/200: Time Est.: Elapsed[4.57h], Remain[9.27h]
+[2023-09-05 10:58:05] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 11:03:16] MOCVRPTrainer.py(137) : Epoch  67: Train (100%)  Obj1 Score: 11.6505, Obj2 Score: 2.2450,  Loss: -0.1316
+[2023-09-05 11:03:16] MOCVRPTrainer.py(79) : Epoch  67/200: Time Est.: Elapsed[4.65h], Remain[9.24h]
+[2023-09-05 11:03:16] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 11:08:14] MOCVRPTrainer.py(137) : Epoch  68: Train (100%)  Obj1 Score: 11.6418, Obj2 Score: 2.2434,  Loss: -0.1293
+[2023-09-05 11:08:14] MOCVRPTrainer.py(79) : Epoch  68/200: Time Est.: Elapsed[4.74h], Remain[9.19h]
+[2023-09-05 11:08:14] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 11:13:13] MOCVRPTrainer.py(137) : Epoch  69: Train (100%)  Obj1 Score: 11.6461, Obj2 Score: 2.2434,  Loss: -0.1303
+[2023-09-05 11:13:13] MOCVRPTrainer.py(79) : Epoch  69/200: Time Est.: Elapsed[4.82h], Remain[9.15h]
+[2023-09-05 11:13:13] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 11:17:53] MOCVRPTrainer.py(137) : Epoch  70: Train (100%)  Obj1 Score: 11.6334, Obj2 Score: 2.2442,  Loss: -0.1294
+[2023-09-05 11:17:53] MOCVRPTrainer.py(79) : Epoch  70/200: Time Est.: Elapsed[4.90h], Remain[9.09h]
+[2023-09-05 11:17:53] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 11:17:53] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 11:22:31] MOCVRPTrainer.py(137) : Epoch  71: Train (100%)  Obj1 Score: 11.6503, Obj2 Score: 2.2406,  Loss: -0.1295
+[2023-09-05 11:22:31] MOCVRPTrainer.py(79) : Epoch  71/200: Time Est.: Elapsed[4.97h], Remain[9.04h]
+[2023-09-05 11:22:31] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 11:27:07] MOCVRPTrainer.py(137) : Epoch  72: Train (100%)  Obj1 Score: 11.6090, Obj2 Score: 2.2422,  Loss: -0.1291
+[2023-09-05 11:27:07] MOCVRPTrainer.py(79) : Epoch  72/200: Time Est.: Elapsed[5.05h], Remain[8.98h]
+[2023-09-05 11:27:07] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 11:31:31] MOCVRPTrainer.py(137) : Epoch  73: Train (100%)  Obj1 Score: 11.6420, Obj2 Score: 2.2433,  Loss: -0.1280
+[2023-09-05 11:31:31] MOCVRPTrainer.py(79) : Epoch  73/200: Time Est.: Elapsed[5.12h], Remain[8.91h]
+[2023-09-05 11:31:31] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 11:35:48] MOCVRPTrainer.py(137) : Epoch  74: Train (100%)  Obj1 Score: 11.6489, Obj2 Score: 2.2429,  Loss: -0.1288
+[2023-09-05 11:35:48] MOCVRPTrainer.py(79) : Epoch  74/200: Time Est.: Elapsed[5.19h], Remain[8.85h]
+[2023-09-05 11:35:48] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 11:40:04] MOCVRPTrainer.py(137) : Epoch  75: Train (100%)  Obj1 Score: 11.6221, Obj2 Score: 2.2419,  Loss: -0.1284
+[2023-09-05 11:40:04] MOCVRPTrainer.py(79) : Epoch  75/200: Time Est.: Elapsed[5.27h], Remain[8.78h]
+[2023-09-05 11:40:04] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 11:40:05] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 11:44:20] MOCVRPTrainer.py(137) : Epoch  76: Train (100%)  Obj1 Score: 11.6384, Obj2 Score: 2.2374,  Loss: -0.1279
+[2023-09-05 11:44:20] MOCVRPTrainer.py(79) : Epoch  76/200: Time Est.: Elapsed[5.34h], Remain[8.71h]
+[2023-09-05 11:44:20] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 11:48:36] MOCVRPTrainer.py(137) : Epoch  77: Train (100%)  Obj1 Score: 11.6377, Obj2 Score: 2.2422,  Loss: -0.1281
+[2023-09-05 11:48:36] MOCVRPTrainer.py(79) : Epoch  77/200: Time Est.: Elapsed[5.41h], Remain[8.64h]
+[2023-09-05 11:48:36] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 11:52:59] MOCVRPTrainer.py(137) : Epoch  78: Train (100%)  Obj1 Score: 11.6296, Obj2 Score: 2.2418,  Loss: -0.1270
+[2023-09-05 11:52:59] MOCVRPTrainer.py(79) : Epoch  78/200: Time Est.: Elapsed[5.48h], Remain[8.57h]
+[2023-09-05 11:52:59] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 11:58:32] MOCVRPTrainer.py(137) : Epoch  79: Train (100%)  Obj1 Score: 11.6478, Obj2 Score: 2.2435,  Loss: -0.1272
+[2023-09-05 11:58:32] MOCVRPTrainer.py(79) : Epoch  79/200: Time Est.: Elapsed[5.57h], Remain[8.54h]
+[2023-09-05 11:58:32] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 12:04:00] MOCVRPTrainer.py(137) : Epoch  80: Train (100%)  Obj1 Score: 11.6591, Obj2 Score: 2.2409,  Loss: -0.1271
+[2023-09-05 12:04:00] MOCVRPTrainer.py(79) : Epoch  80/200: Time Est.: Elapsed[5.66h], Remain[8.50h]
+[2023-09-05 12:04:00] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 12:04:00] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 12:09:19] MOCVRPTrainer.py(137) : Epoch  81: Train (100%)  Obj1 Score: 11.6520, Obj2 Score: 2.2399,  Loss: -0.1281
+[2023-09-05 12:09:19] MOCVRPTrainer.py(79) : Epoch  81/200: Time Est.: Elapsed[5.75h], Remain[8.45h]
+[2023-09-05 12:09:19] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 12:14:32] MOCVRPTrainer.py(137) : Epoch  82: Train (100%)  Obj1 Score: 11.6513, Obj2 Score: 2.2403,  Loss: -0.1265
+[2023-09-05 12:14:32] MOCVRPTrainer.py(79) : Epoch  82/200: Time Est.: Elapsed[5.84h], Remain[8.40h]
+[2023-09-05 12:14:32] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 12:19:33] MOCVRPTrainer.py(137) : Epoch  83: Train (100%)  Obj1 Score: 11.6594, Obj2 Score: 2.2417,  Loss: -0.1262
+[2023-09-05 12:19:33] MOCVRPTrainer.py(79) : Epoch  83/200: Time Est.: Elapsed[5.92h], Remain[8.35h]
+[2023-09-05 12:19:33] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 12:24:35] MOCVRPTrainer.py(137) : Epoch  84: Train (100%)  Obj1 Score: 11.6324, Obj2 Score: 2.2415,  Loss: -0.1268
+[2023-09-05 12:24:35] MOCVRPTrainer.py(79) : Epoch  84/200: Time Est.: Elapsed[6.01h], Remain[8.30h]
+[2023-09-05 12:24:35] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 12:29:26] MOCVRPTrainer.py(137) : Epoch  85: Train (100%)  Obj1 Score: 11.6298, Obj2 Score: 2.2422,  Loss: -0.1263
+[2023-09-05 12:29:26] MOCVRPTrainer.py(79) : Epoch  85/200: Time Est.: Elapsed[6.09h], Remain[8.24h]
+[2023-09-05 12:29:26] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 12:29:26] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 12:34:00] MOCVRPTrainer.py(137) : Epoch  86: Train (100%)  Obj1 Score: 11.6656, Obj2 Score: 2.2407,  Loss: -0.1256
+[2023-09-05 12:34:00] MOCVRPTrainer.py(79) : Epoch  86/200: Time Est.: Elapsed[6.16h], Remain[8.17h]
+[2023-09-05 12:34:00] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 12:38:35] MOCVRPTrainer.py(137) : Epoch  87: Train (100%)  Obj1 Score: 11.6451, Obj2 Score: 2.2410,  Loss: -0.1254
+[2023-09-05 12:38:35] MOCVRPTrainer.py(79) : Epoch  87/200: Time Est.: Elapsed[6.24h], Remain[8.11h]
+[2023-09-05 12:38:35] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 12:43:11] MOCVRPTrainer.py(137) : Epoch  88: Train (100%)  Obj1 Score: 11.6393, Obj2 Score: 2.2408,  Loss: -0.1258
+[2023-09-05 12:43:11] MOCVRPTrainer.py(79) : Epoch  88/200: Time Est.: Elapsed[6.32h], Remain[8.04h]
+[2023-09-05 12:43:11] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 12:47:46] MOCVRPTrainer.py(137) : Epoch  89: Train (100%)  Obj1 Score: 11.6505, Obj2 Score: 2.2424,  Loss: -0.1246
+[2023-09-05 12:47:46] MOCVRPTrainer.py(79) : Epoch  89/200: Time Est.: Elapsed[6.39h], Remain[7.97h]
+[2023-09-05 12:47:46] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 12:52:17] MOCVRPTrainer.py(137) : Epoch  90: Train (100%)  Obj1 Score: 11.6321, Obj2 Score: 2.2416,  Loss: -0.1244
+[2023-09-05 12:52:17] MOCVRPTrainer.py(79) : Epoch  90/200: Time Est.: Elapsed[6.47h], Remain[7.91h]
+[2023-09-05 12:52:17] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 12:52:17] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 12:56:05] MOCVRPTrainer.py(137) : Epoch  91: Train (100%)  Obj1 Score: 11.6063, Obj2 Score: 2.2409,  Loss: -0.1244
+[2023-09-05 12:56:05] MOCVRPTrainer.py(79) : Epoch  91/200: Time Est.: Elapsed[6.53h], Remain[7.83h]
+[2023-09-05 12:56:05] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 12:59:57] MOCVRPTrainer.py(137) : Epoch  92: Train (100%)  Obj1 Score: 11.6538, Obj2 Score: 2.2413,  Loss: -0.1239
+[2023-09-05 12:59:57] MOCVRPTrainer.py(79) : Epoch  92/200: Time Est.: Elapsed[6.60h], Remain[7.74h]
+[2023-09-05 12:59:57] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 13:03:49] MOCVRPTrainer.py(137) : Epoch  93: Train (100%)  Obj1 Score: 11.6321, Obj2 Score: 2.2404,  Loss: -0.1233
+[2023-09-05 13:03:49] MOCVRPTrainer.py(79) : Epoch  93/200: Time Est.: Elapsed[6.66h], Remain[7.66h]
+[2023-09-05 13:03:49] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 13:08:25] MOCVRPTrainer.py(137) : Epoch  94: Train (100%)  Obj1 Score: 11.6514, Obj2 Score: 2.2402,  Loss: -0.1231
+[2023-09-05 13:08:25] MOCVRPTrainer.py(79) : Epoch  94/200: Time Est.: Elapsed[6.74h], Remain[7.60h]
+[2023-09-05 13:08:25] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 13:12:58] MOCVRPTrainer.py(137) : Epoch  95: Train (100%)  Obj1 Score: 11.6345, Obj2 Score: 2.2393,  Loss: -0.1230
+[2023-09-05 13:12:58] MOCVRPTrainer.py(79) : Epoch  95/200: Time Est.: Elapsed[6.81h], Remain[7.53h]
+[2023-09-05 13:12:58] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 13:12:58] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 13:17:47] MOCVRPTrainer.py(137) : Epoch  96: Train (100%)  Obj1 Score: 11.6508, Obj2 Score: 2.2404,  Loss: -0.1219
+[2023-09-05 13:17:47] MOCVRPTrainer.py(79) : Epoch  96/200: Time Est.: Elapsed[6.89h], Remain[7.47h]
+[2023-09-05 13:17:47] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 13:23:02] MOCVRPTrainer.py(137) : Epoch  97: Train (100%)  Obj1 Score: 11.6357, Obj2 Score: 2.2396,  Loss: -0.1222
+[2023-09-05 13:23:02] MOCVRPTrainer.py(79) : Epoch  97/200: Time Est.: Elapsed[6.98h], Remain[7.41h]
+[2023-09-05 13:23:02] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 13:28:24] MOCVRPTrainer.py(137) : Epoch  98: Train (100%)  Obj1 Score: 11.6272, Obj2 Score: 2.2410,  Loss: -0.1229
+[2023-09-05 13:28:24] MOCVRPTrainer.py(79) : Epoch  98/200: Time Est.: Elapsed[7.07h], Remain[7.36h]
+[2023-09-05 13:28:24] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 13:33:31] MOCVRPTrainer.py(137) : Epoch  99: Train (100%)  Obj1 Score: 11.6276, Obj2 Score: 2.2391,  Loss: -0.1235
+[2023-09-05 13:33:31] MOCVRPTrainer.py(79) : Epoch  99/200: Time Est.: Elapsed[7.16h], Remain[7.30h]
+[2023-09-05 13:33:31] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 13:38:33] MOCVRPTrainer.py(137) : Epoch 100: Train (100%)  Obj1 Score: 11.6297, Obj2 Score: 2.2395,  Loss: -0.1231
+[2023-09-05 13:38:33] MOCVRPTrainer.py(79) : Epoch 100/200: Time Est.: Elapsed[7.24h], Remain[7.24h]
+[2023-09-05 13:38:33] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 13:38:33] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 13:43:25] MOCVRPTrainer.py(137) : Epoch 101: Train (100%)  Obj1 Score: 11.6434, Obj2 Score: 2.2390,  Loss: -0.1222
+[2023-09-05 13:43:25] MOCVRPTrainer.py(79) : Epoch 101/200: Time Est.: Elapsed[7.32h], Remain[7.18h]
+[2023-09-05 13:43:25] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 13:48:14] MOCVRPTrainer.py(137) : Epoch 102: Train (100%)  Obj1 Score: 11.6435, Obj2 Score: 2.2393,  Loss: -0.1217
+[2023-09-05 13:48:14] MOCVRPTrainer.py(79) : Epoch 102/200: Time Est.: Elapsed[7.40h], Remain[7.11h]
+[2023-09-05 13:48:14] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 13:52:50] MOCVRPTrainer.py(137) : Epoch 103: Train (100%)  Obj1 Score: 11.6223, Obj2 Score: 2.2401,  Loss: -0.1226
+[2023-09-05 13:52:50] MOCVRPTrainer.py(79) : Epoch 103/200: Time Est.: Elapsed[7.48h], Remain[7.04h]
+[2023-09-05 13:52:50] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 13:57:35] MOCVRPTrainer.py(137) : Epoch 104: Train (100%)  Obj1 Score: 11.6376, Obj2 Score: 2.2389,  Loss: -0.1209
+[2023-09-05 13:57:35] MOCVRPTrainer.py(79) : Epoch 104/200: Time Est.: Elapsed[7.56h], Remain[6.98h]
+[2023-09-05 13:57:35] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 14:02:16] MOCVRPTrainer.py(137) : Epoch 105: Train (100%)  Obj1 Score: 11.6425, Obj2 Score: 2.2384,  Loss: -0.1209
+[2023-09-05 14:02:16] MOCVRPTrainer.py(79) : Epoch 105/200: Time Est.: Elapsed[7.64h], Remain[6.91h]
+[2023-09-05 14:02:16] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 14:02:16] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 14:06:42] MOCVRPTrainer.py(137) : Epoch 106: Train (100%)  Obj1 Score: 11.6179, Obj2 Score: 2.2377,  Loss: -0.1197
+[2023-09-05 14:06:42] MOCVRPTrainer.py(79) : Epoch 106/200: Time Est.: Elapsed[7.71h], Remain[6.84h]
+[2023-09-05 14:06:42] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 14:10:59] MOCVRPTrainer.py(137) : Epoch 107: Train (100%)  Obj1 Score: 11.6419, Obj2 Score: 2.2388,  Loss: -0.1209
+[2023-09-05 14:10:59] MOCVRPTrainer.py(79) : Epoch 107/200: Time Est.: Elapsed[7.78h], Remain[6.76h]
+[2023-09-05 14:10:59] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 14:14:57] MOCVRPTrainer.py(137) : Epoch 108: Train (100%)  Obj1 Score: 11.6057, Obj2 Score: 2.2393,  Loss: -0.1202
+[2023-09-05 14:14:57] MOCVRPTrainer.py(79) : Epoch 108/200: Time Est.: Elapsed[7.85h], Remain[6.68h]
+[2023-09-05 14:14:57] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 14:19:01] MOCVRPTrainer.py(137) : Epoch 109: Train (100%)  Obj1 Score: 11.6267, Obj2 Score: 2.2388,  Loss: -0.1199
+[2023-09-05 14:19:01] MOCVRPTrainer.py(79) : Epoch 109/200: Time Est.: Elapsed[7.92h], Remain[6.61h]
+[2023-09-05 14:19:01] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 14:23:13] MOCVRPTrainer.py(137) : Epoch 110: Train (100%)  Obj1 Score: 11.6549, Obj2 Score: 2.2401,  Loss: -0.1207
+[2023-09-05 14:23:13] MOCVRPTrainer.py(79) : Epoch 110/200: Time Est.: Elapsed[7.99h], Remain[6.53h]
+[2023-09-05 14:23:13] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 14:23:13] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 14:27:10] MOCVRPTrainer.py(137) : Epoch 111: Train (100%)  Obj1 Score: 11.6242, Obj2 Score: 2.2368,  Loss: -0.1189
+[2023-09-05 14:27:10] MOCVRPTrainer.py(79) : Epoch 111/200: Time Est.: Elapsed[8.05h], Remain[6.46h]
+[2023-09-05 14:27:10] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 14:31:49] MOCVRPTrainer.py(137) : Epoch 112: Train (100%)  Obj1 Score: 11.6226, Obj2 Score: 2.2382,  Loss: -0.1195
+[2023-09-05 14:31:49] MOCVRPTrainer.py(79) : Epoch 112/200: Time Est.: Elapsed[8.13h], Remain[6.39h]
+[2023-09-05 14:31:49] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 14:35:45] MOCVRPTrainer.py(137) : Epoch 113: Train (100%)  Obj1 Score: 11.6405, Obj2 Score: 2.2394,  Loss: -0.1190
+[2023-09-05 14:35:45] MOCVRPTrainer.py(79) : Epoch 113/200: Time Est.: Elapsed[8.19h], Remain[6.31h]
+[2023-09-05 14:35:45] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 14:39:46] MOCVRPTrainer.py(137) : Epoch 114: Train (100%)  Obj1 Score: 11.6370, Obj2 Score: 2.2360,  Loss: -0.1184
+[2023-09-05 14:39:46] MOCVRPTrainer.py(79) : Epoch 114/200: Time Est.: Elapsed[8.26h], Remain[6.23h]
+[2023-09-05 14:39:46] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 14:43:43] MOCVRPTrainer.py(137) : Epoch 115: Train (100%)  Obj1 Score: 11.6622, Obj2 Score: 2.2375,  Loss: -0.1190
+[2023-09-05 14:43:43] MOCVRPTrainer.py(79) : Epoch 115/200: Time Est.: Elapsed[8.33h], Remain[6.15h]
+[2023-09-05 14:43:43] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 14:43:43] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 14:47:39] MOCVRPTrainer.py(137) : Epoch 116: Train (100%)  Obj1 Score: 11.6348, Obj2 Score: 2.2361,  Loss: -0.1198
+[2023-09-05 14:47:39] MOCVRPTrainer.py(79) : Epoch 116/200: Time Est.: Elapsed[8.39h], Remain[6.08h]
+[2023-09-05 14:47:39] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 14:51:34] MOCVRPTrainer.py(137) : Epoch 117: Train (100%)  Obj1 Score: 11.6459, Obj2 Score: 2.2371,  Loss: -0.1187
+[2023-09-05 14:51:34] MOCVRPTrainer.py(79) : Epoch 117/200: Time Est.: Elapsed[8.46h], Remain[6.00h]
+[2023-09-05 14:51:34] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 14:55:39] MOCVRPTrainer.py(137) : Epoch 118: Train (100%)  Obj1 Score: 11.6408, Obj2 Score: 2.2368,  Loss: -0.1187
+[2023-09-05 14:55:39] MOCVRPTrainer.py(79) : Epoch 118/200: Time Est.: Elapsed[8.53h], Remain[5.92h]
+[2023-09-05 14:55:39] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 14:59:49] MOCVRPTrainer.py(137) : Epoch 119: Train (100%)  Obj1 Score: 11.6245, Obj2 Score: 2.2371,  Loss: -0.1191
+[2023-09-05 14:59:49] MOCVRPTrainer.py(79) : Epoch 119/200: Time Est.: Elapsed[8.60h], Remain[5.85h]
+[2023-09-05 14:59:49] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 15:04:03] MOCVRPTrainer.py(137) : Epoch 120: Train (100%)  Obj1 Score: 11.6582, Obj2 Score: 2.2381,  Loss: -0.1171
+[2023-09-05 15:04:03] MOCVRPTrainer.py(79) : Epoch 120/200: Time Est.: Elapsed[8.67h], Remain[5.78h]
+[2023-09-05 15:04:03] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 15:04:03] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 15:08:27] MOCVRPTrainer.py(137) : Epoch 121: Train (100%)  Obj1 Score: 11.6393, Obj2 Score: 2.2367,  Loss: -0.1181
+[2023-09-05 15:08:27] MOCVRPTrainer.py(79) : Epoch 121/200: Time Est.: Elapsed[8.74h], Remain[5.71h]
+[2023-09-05 15:08:27] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 15:12:24] MOCVRPTrainer.py(137) : Epoch 122: Train (100%)  Obj1 Score: 11.6452, Obj2 Score: 2.2359,  Loss: -0.1186
+[2023-09-05 15:12:24] MOCVRPTrainer.py(79) : Epoch 122/200: Time Est.: Elapsed[8.81h], Remain[5.63h]
+[2023-09-05 15:12:24] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 15:16:23] MOCVRPTrainer.py(137) : Epoch 123: Train (100%)  Obj1 Score: 11.6730, Obj2 Score: 2.2370,  Loss: -0.1173
+[2023-09-05 15:16:23] MOCVRPTrainer.py(79) : Epoch 123/200: Time Est.: Elapsed[8.87h], Remain[5.55h]
+[2023-09-05 15:16:23] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 15:20:22] MOCVRPTrainer.py(137) : Epoch 124: Train (100%)  Obj1 Score: 11.6407, Obj2 Score: 2.2370,  Loss: -0.1176
+[2023-09-05 15:20:22] MOCVRPTrainer.py(79) : Epoch 124/200: Time Est.: Elapsed[8.94h], Remain[5.48h]
+[2023-09-05 15:20:22] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 15:24:21] MOCVRPTrainer.py(137) : Epoch 125: Train (100%)  Obj1 Score: 11.6579, Obj2 Score: 2.2354,  Loss: -0.1167
+[2023-09-05 15:24:21] MOCVRPTrainer.py(79) : Epoch 125/200: Time Est.: Elapsed[9.00h], Remain[5.40h]
+[2023-09-05 15:24:21] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 15:24:21] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 15:28:19] MOCVRPTrainer.py(137) : Epoch 126: Train (100%)  Obj1 Score: 11.6218, Obj2 Score: 2.2390,  Loss: -0.1175
+[2023-09-05 15:28:19] MOCVRPTrainer.py(79) : Epoch 126/200: Time Est.: Elapsed[9.07h], Remain[5.33h]
+[2023-09-05 15:28:19] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 15:32:20] MOCVRPTrainer.py(137) : Epoch 127: Train (100%)  Obj1 Score: 11.6380, Obj2 Score: 2.2388,  Loss: -0.1164
+[2023-09-05 15:32:20] MOCVRPTrainer.py(79) : Epoch 127/200: Time Est.: Elapsed[9.14h], Remain[5.25h]
+[2023-09-05 15:32:20] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 15:36:22] MOCVRPTrainer.py(137) : Epoch 128: Train (100%)  Obj1 Score: 11.6234, Obj2 Score: 2.2366,  Loss: -0.1166
+[2023-09-05 15:36:22] MOCVRPTrainer.py(79) : Epoch 128/200: Time Est.: Elapsed[9.20h], Remain[5.18h]
+[2023-09-05 15:36:22] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 15:40:22] MOCVRPTrainer.py(137) : Epoch 129: Train (100%)  Obj1 Score: 11.6502, Obj2 Score: 2.2363,  Loss: -0.1159
+[2023-09-05 15:40:22] MOCVRPTrainer.py(79) : Epoch 129/200: Time Est.: Elapsed[9.27h], Remain[5.10h]
+[2023-09-05 15:40:22] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 15:44:21] MOCVRPTrainer.py(137) : Epoch 130: Train (100%)  Obj1 Score: 11.6376, Obj2 Score: 2.2362,  Loss: -0.1167
+[2023-09-05 15:44:21] MOCVRPTrainer.py(79) : Epoch 130/200: Time Est.: Elapsed[9.34h], Remain[5.03h]
+[2023-09-05 15:44:21] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 15:44:21] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 15:48:20] MOCVRPTrainer.py(137) : Epoch 131: Train (100%)  Obj1 Score: 11.6546, Obj2 Score: 2.2375,  Loss: -0.1168
+[2023-09-05 15:48:20] MOCVRPTrainer.py(79) : Epoch 131/200: Time Est.: Elapsed[9.40h], Remain[4.95h]
+[2023-09-05 15:48:20] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 15:52:16] MOCVRPTrainer.py(137) : Epoch 132: Train (100%)  Obj1 Score: 11.6235, Obj2 Score: 2.2374,  Loss: -0.1164
+[2023-09-05 15:52:16] MOCVRPTrainer.py(79) : Epoch 132/200: Time Est.: Elapsed[9.47h], Remain[4.88h]
+[2023-09-05 15:52:16] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 15:56:17] MOCVRPTrainer.py(137) : Epoch 133: Train (100%)  Obj1 Score: 11.6427, Obj2 Score: 2.2368,  Loss: -0.1162
+[2023-09-05 15:56:17] MOCVRPTrainer.py(79) : Epoch 133/200: Time Est.: Elapsed[9.54h], Remain[4.80h]
+[2023-09-05 15:56:17] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 16:00:15] MOCVRPTrainer.py(137) : Epoch 134: Train (100%)  Obj1 Score: 11.6471, Obj2 Score: 2.2366,  Loss: -0.1162
+[2023-09-05 16:00:15] MOCVRPTrainer.py(79) : Epoch 134/200: Time Est.: Elapsed[9.60h], Remain[4.73h]
+[2023-09-05 16:00:15] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 16:04:22] MOCVRPTrainer.py(137) : Epoch 135: Train (100%)  Obj1 Score: 11.6069, Obj2 Score: 2.2356,  Loss: -0.1156
+[2023-09-05 16:04:22] MOCVRPTrainer.py(79) : Epoch 135/200: Time Est.: Elapsed[9.67h], Remain[4.66h]
+[2023-09-05 16:04:22] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 16:04:22] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 16:08:22] MOCVRPTrainer.py(137) : Epoch 136: Train (100%)  Obj1 Score: 11.6458, Obj2 Score: 2.2347,  Loss: -0.1144
+[2023-09-05 16:08:22] MOCVRPTrainer.py(79) : Epoch 136/200: Time Est.: Elapsed[9.74h], Remain[4.58h]
+[2023-09-05 16:08:22] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 16:12:20] MOCVRPTrainer.py(137) : Epoch 137: Train (100%)  Obj1 Score: 11.6484, Obj2 Score: 2.2343,  Loss: -0.1147
+[2023-09-05 16:12:20] MOCVRPTrainer.py(79) : Epoch 137/200: Time Est.: Elapsed[9.80h], Remain[4.51h]
+[2023-09-05 16:12:20] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 16:16:19] MOCVRPTrainer.py(137) : Epoch 138: Train (100%)  Obj1 Score: 11.6450, Obj2 Score: 2.2378,  Loss: -0.1151
+[2023-09-05 16:16:19] MOCVRPTrainer.py(79) : Epoch 138/200: Time Est.: Elapsed[9.87h], Remain[4.43h]
+[2023-09-05 16:16:19] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 16:20:16] MOCVRPTrainer.py(137) : Epoch 139: Train (100%)  Obj1 Score: 11.6147, Obj2 Score: 2.2357,  Loss: -0.1142
+[2023-09-05 16:20:16] MOCVRPTrainer.py(79) : Epoch 139/200: Time Est.: Elapsed[9.94h], Remain[4.36h]
+[2023-09-05 16:20:16] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 16:24:13] MOCVRPTrainer.py(137) : Epoch 140: Train (100%)  Obj1 Score: 11.6332, Obj2 Score: 2.2342,  Loss: -0.1136
+[2023-09-05 16:24:13] MOCVRPTrainer.py(79) : Epoch 140/200: Time Est.: Elapsed[10.00h], Remain[4.29h]
+[2023-09-05 16:24:13] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 16:24:13] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 16:28:12] MOCVRPTrainer.py(137) : Epoch 141: Train (100%)  Obj1 Score: 11.6643, Obj2 Score: 2.2353,  Loss: -0.1146
+[2023-09-05 16:28:12] MOCVRPTrainer.py(79) : Epoch 141/200: Time Est.: Elapsed[10.07h], Remain[4.21h]
+[2023-09-05 16:28:12] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 16:32:21] MOCVRPTrainer.py(137) : Epoch 142: Train (100%)  Obj1 Score: 11.6363, Obj2 Score: 2.2344,  Loss: -0.1143
+[2023-09-05 16:32:21] MOCVRPTrainer.py(79) : Epoch 142/200: Time Est.: Elapsed[10.14h], Remain[4.14h]
+[2023-09-05 16:32:21] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 16:36:20] MOCVRPTrainer.py(137) : Epoch 143: Train (100%)  Obj1 Score: 11.6553, Obj2 Score: 2.2349,  Loss: -0.1136
+[2023-09-05 16:36:20] MOCVRPTrainer.py(79) : Epoch 143/200: Time Est.: Elapsed[10.20h], Remain[4.07h]
+[2023-09-05 16:36:20] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 16:40:19] MOCVRPTrainer.py(137) : Epoch 144: Train (100%)  Obj1 Score: 11.6367, Obj2 Score: 2.2357,  Loss: -0.1139
+[2023-09-05 16:40:19] MOCVRPTrainer.py(79) : Epoch 144/200: Time Est.: Elapsed[10.27h], Remain[3.99h]
+[2023-09-05 16:40:19] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 16:44:16] MOCVRPTrainer.py(137) : Epoch 145: Train (100%)  Obj1 Score: 11.6198, Obj2 Score: 2.2331,  Loss: -0.1136
+[2023-09-05 16:44:16] MOCVRPTrainer.py(79) : Epoch 145/200: Time Est.: Elapsed[10.34h], Remain[3.92h]
+[2023-09-05 16:44:16] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 16:44:16] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 16:48:12] MOCVRPTrainer.py(137) : Epoch 146: Train (100%)  Obj1 Score: 11.6284, Obj2 Score: 2.2318,  Loss: -0.1139
+[2023-09-05 16:48:12] MOCVRPTrainer.py(79) : Epoch 146/200: Time Est.: Elapsed[10.40h], Remain[3.85h]
+[2023-09-05 16:48:12] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 16:52:10] MOCVRPTrainer.py(137) : Epoch 147: Train (100%)  Obj1 Score: 11.6371, Obj2 Score: 2.2362,  Loss: -0.1129
+[2023-09-05 16:52:10] MOCVRPTrainer.py(79) : Epoch 147/200: Time Est.: Elapsed[10.47h], Remain[3.77h]
+[2023-09-05 16:52:10] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 16:56:07] MOCVRPTrainer.py(137) : Epoch 148: Train (100%)  Obj1 Score: 11.6394, Obj2 Score: 2.2350,  Loss: -0.1133
+[2023-09-05 16:56:07] MOCVRPTrainer.py(79) : Epoch 148/200: Time Est.: Elapsed[10.53h], Remain[3.70h]
+[2023-09-05 16:56:07] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 17:00:04] MOCVRPTrainer.py(137) : Epoch 149: Train (100%)  Obj1 Score: 11.6396, Obj2 Score: 2.2346,  Loss: -0.1130
+[2023-09-05 17:00:04] MOCVRPTrainer.py(79) : Epoch 149/200: Time Est.: Elapsed[10.60h], Remain[3.63h]
+[2023-09-05 17:00:04] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 17:04:08] MOCVRPTrainer.py(137) : Epoch 150: Train (100%)  Obj1 Score: 11.6318, Obj2 Score: 2.2357,  Loss: -0.1119
+[2023-09-05 17:04:08] MOCVRPTrainer.py(79) : Epoch 150/200: Time Est.: Elapsed[10.67h], Remain[3.56h]
+[2023-09-05 17:04:08] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 17:04:08] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 17:08:09] MOCVRPTrainer.py(137) : Epoch 151: Train (100%)  Obj1 Score: 11.6576, Obj2 Score: 2.2349,  Loss: -0.1122
+[2023-09-05 17:08:09] MOCVRPTrainer.py(79) : Epoch 151/200: Time Est.: Elapsed[10.73h], Remain[3.48h]
+[2023-09-05 17:08:09] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 17:12:07] MOCVRPTrainer.py(137) : Epoch 152: Train (100%)  Obj1 Score: 11.6172, Obj2 Score: 2.2344,  Loss: -0.1121
+[2023-09-05 17:12:07] MOCVRPTrainer.py(79) : Epoch 152/200: Time Est.: Elapsed[10.80h], Remain[3.41h]
+[2023-09-05 17:12:07] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 17:16:07] MOCVRPTrainer.py(137) : Epoch 153: Train (100%)  Obj1 Score: 11.6466, Obj2 Score: 2.2346,  Loss: -0.1124
+[2023-09-05 17:16:07] MOCVRPTrainer.py(79) : Epoch 153/200: Time Est.: Elapsed[10.87h], Remain[3.34h]
+[2023-09-05 17:16:07] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 17:20:08] MOCVRPTrainer.py(137) : Epoch 154: Train (100%)  Obj1 Score: 11.6570, Obj2 Score: 2.2340,  Loss: -0.1111
+[2023-09-05 17:20:08] MOCVRPTrainer.py(79) : Epoch 154/200: Time Est.: Elapsed[10.93h], Remain[3.27h]
+[2023-09-05 17:20:08] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 17:24:09] MOCVRPTrainer.py(137) : Epoch 155: Train (100%)  Obj1 Score: 11.6525, Obj2 Score: 2.2357,  Loss: -0.1120
+[2023-09-05 17:24:09] MOCVRPTrainer.py(79) : Epoch 155/200: Time Est.: Elapsed[11.00h], Remain[3.19h]
+[2023-09-05 17:24:09] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 17:24:09] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 17:28:09] MOCVRPTrainer.py(137) : Epoch 156: Train (100%)  Obj1 Score: 11.6433, Obj2 Score: 2.2338,  Loss: -0.1122
+[2023-09-05 17:28:09] MOCVRPTrainer.py(79) : Epoch 156/200: Time Est.: Elapsed[11.07h], Remain[3.12h]
+[2023-09-05 17:28:09] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 17:32:29] MOCVRPTrainer.py(137) : Epoch 157: Train (100%)  Obj1 Score: 11.6298, Obj2 Score: 2.2351,  Loss: -0.1116
+[2023-09-05 17:32:29] MOCVRPTrainer.py(79) : Epoch 157/200: Time Est.: Elapsed[11.14h], Remain[3.05h]
+[2023-09-05 17:32:29] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 17:37:04] MOCVRPTrainer.py(137) : Epoch 158: Train (100%)  Obj1 Score: 11.6378, Obj2 Score: 2.2337,  Loss: -0.1111
+[2023-09-05 17:37:04] MOCVRPTrainer.py(79) : Epoch 158/200: Time Est.: Elapsed[11.22h], Remain[2.98h]
+[2023-09-05 17:37:04] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 17:41:44] MOCVRPTrainer.py(137) : Epoch 159: Train (100%)  Obj1 Score: 11.6331, Obj2 Score: 2.2349,  Loss: -0.1117
+[2023-09-05 17:41:44] MOCVRPTrainer.py(79) : Epoch 159/200: Time Est.: Elapsed[11.29h], Remain[2.91h]
+[2023-09-05 17:41:44] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 17:46:25] MOCVRPTrainer.py(137) : Epoch 160: Train (100%)  Obj1 Score: 11.6237, Obj2 Score: 2.2325,  Loss: -0.1116
+[2023-09-05 17:46:25] MOCVRPTrainer.py(79) : Epoch 160/200: Time Est.: Elapsed[11.37h], Remain[2.84h]
+[2023-09-05 17:46:25] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 17:46:25] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 17:50:45] MOCVRPTrainer.py(137) : Epoch 161: Train (100%)  Obj1 Score: 11.6397, Obj2 Score: 2.2339,  Loss: -0.1104
+[2023-09-05 17:50:45] MOCVRPTrainer.py(79) : Epoch 161/200: Time Est.: Elapsed[11.44h], Remain[2.77h]
+[2023-09-05 17:50:45] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 17:54:56] MOCVRPTrainer.py(137) : Epoch 162: Train (100%)  Obj1 Score: 11.6360, Obj2 Score: 2.2321,  Loss: -0.1107
+[2023-09-05 17:54:56] MOCVRPTrainer.py(79) : Epoch 162/200: Time Est.: Elapsed[11.51h], Remain[2.70h]
+[2023-09-05 17:54:56] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 17:58:58] MOCVRPTrainer.py(137) : Epoch 163: Train (100%)  Obj1 Score: 11.6279, Obj2 Score: 2.2340,  Loss: -0.1113
+[2023-09-05 17:58:58] MOCVRPTrainer.py(79) : Epoch 163/200: Time Est.: Elapsed[11.58h], Remain[2.63h]
+[2023-09-05 17:58:58] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 18:03:01] MOCVRPTrainer.py(137) : Epoch 164: Train (100%)  Obj1 Score: 11.6398, Obj2 Score: 2.2341,  Loss: -0.1111
+[2023-09-05 18:03:01] MOCVRPTrainer.py(79) : Epoch 164/200: Time Est.: Elapsed[11.65h], Remain[2.56h]
+[2023-09-05 18:03:01] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 18:07:19] MOCVRPTrainer.py(137) : Epoch 165: Train (100%)  Obj1 Score: 11.6496, Obj2 Score: 2.2336,  Loss: -0.1109
+[2023-09-05 18:07:19] MOCVRPTrainer.py(79) : Epoch 165/200: Time Est.: Elapsed[11.72h], Remain[2.49h]
+[2023-09-05 18:07:19] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 18:07:19] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 18:11:18] MOCVRPTrainer.py(137) : Epoch 166: Train (100%)  Obj1 Score: 11.6243, Obj2 Score: 2.2324,  Loss: -0.1103
+[2023-09-05 18:11:18] MOCVRPTrainer.py(79) : Epoch 166/200: Time Est.: Elapsed[11.79h], Remain[2.41h]
+[2023-09-05 18:11:18] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 18:15:18] MOCVRPTrainer.py(137) : Epoch 167: Train (100%)  Obj1 Score: 11.6244, Obj2 Score: 2.2318,  Loss: -0.1100
+[2023-09-05 18:15:18] MOCVRPTrainer.py(79) : Epoch 167/200: Time Est.: Elapsed[11.85h], Remain[2.34h]
+[2023-09-05 18:15:18] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 18:19:46] MOCVRPTrainer.py(137) : Epoch 168: Train (100%)  Obj1 Score: 11.6351, Obj2 Score: 2.2331,  Loss: -0.1104
+[2023-09-05 18:19:46] MOCVRPTrainer.py(79) : Epoch 168/200: Time Est.: Elapsed[11.93h], Remain[2.27h]
+[2023-09-05 18:19:46] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 18:24:33] MOCVRPTrainer.py(137) : Epoch 169: Train (100%)  Obj1 Score: 11.6518, Obj2 Score: 2.2325,  Loss: -0.1096
+[2023-09-05 18:24:33] MOCVRPTrainer.py(79) : Epoch 169/200: Time Est.: Elapsed[12.01h], Remain[2.20h]
+[2023-09-05 18:24:33] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 18:29:20] MOCVRPTrainer.py(137) : Epoch 170: Train (100%)  Obj1 Score: 11.6375, Obj2 Score: 2.2316,  Loss: -0.1100
+[2023-09-05 18:29:20] MOCVRPTrainer.py(79) : Epoch 170/200: Time Est.: Elapsed[12.09h], Remain[2.13h]
+[2023-09-05 18:29:20] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 18:29:20] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 18:33:47] MOCVRPTrainer.py(137) : Epoch 171: Train (100%)  Obj1 Score: 11.6329, Obj2 Score: 2.2344,  Loss: -0.1101
+[2023-09-05 18:33:47] MOCVRPTrainer.py(79) : Epoch 171/200: Time Est.: Elapsed[12.16h], Remain[2.06h]
+[2023-09-05 18:33:47] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 18:37:49] MOCVRPTrainer.py(137) : Epoch 172: Train (100%)  Obj1 Score: 11.6338, Obj2 Score: 2.2325,  Loss: -0.1101
+[2023-09-05 18:37:49] MOCVRPTrainer.py(79) : Epoch 172/200: Time Est.: Elapsed[12.23h], Remain[1.99h]
+[2023-09-05 18:37:49] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 18:41:50] MOCVRPTrainer.py(137) : Epoch 173: Train (100%)  Obj1 Score: 11.6004, Obj2 Score: 2.2332,  Loss: -0.1098
+[2023-09-05 18:41:50] MOCVRPTrainer.py(79) : Epoch 173/200: Time Est.: Elapsed[12.30h], Remain[1.92h]
+[2023-09-05 18:41:50] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 18:45:52] MOCVRPTrainer.py(137) : Epoch 174: Train (100%)  Obj1 Score: 11.6513, Obj2 Score: 2.2333,  Loss: -0.1098
+[2023-09-05 18:45:52] MOCVRPTrainer.py(79) : Epoch 174/200: Time Est.: Elapsed[12.36h], Remain[1.85h]
+[2023-09-05 18:45:52] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 18:49:53] MOCVRPTrainer.py(137) : Epoch 175: Train (100%)  Obj1 Score: 11.6193, Obj2 Score: 2.2316,  Loss: -0.1097
+[2023-09-05 18:49:53] MOCVRPTrainer.py(79) : Epoch 175/200: Time Est.: Elapsed[12.43h], Remain[1.78h]
+[2023-09-05 18:49:53] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 18:49:53] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 18:53:54] MOCVRPTrainer.py(137) : Epoch 176: Train (100%)  Obj1 Score: 11.6435, Obj2 Score: 2.2324,  Loss: -0.1085
+[2023-09-05 18:53:54] MOCVRPTrainer.py(79) : Epoch 176/200: Time Est.: Elapsed[12.50h], Remain[1.70h]
+[2023-09-05 18:53:54] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 18:57:53] MOCVRPTrainer.py(137) : Epoch 177: Train (100%)  Obj1 Score: 11.6087, Obj2 Score: 2.2330,  Loss: -0.1091
+[2023-09-05 18:57:53] MOCVRPTrainer.py(79) : Epoch 177/200: Time Est.: Elapsed[12.56h], Remain[1.63h]
+[2023-09-05 18:57:53] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 19:01:53] MOCVRPTrainer.py(137) : Epoch 178: Train (100%)  Obj1 Score: 11.6206, Obj2 Score: 2.2311,  Loss: -0.1091
+[2023-09-05 19:01:53] MOCVRPTrainer.py(79) : Epoch 178/200: Time Est.: Elapsed[12.63h], Remain[1.56h]
+[2023-09-05 19:01:53] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 19:05:51] MOCVRPTrainer.py(137) : Epoch 179: Train (100%)  Obj1 Score: 11.6205, Obj2 Score: 2.2303,  Loss: -0.1087
+[2023-09-05 19:05:51] MOCVRPTrainer.py(79) : Epoch 179/200: Time Est.: Elapsed[12.70h], Remain[1.49h]
+[2023-09-05 19:05:51] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 19:10:05] MOCVRPTrainer.py(137) : Epoch 180: Train (100%)  Obj1 Score: 11.6274, Obj2 Score: 2.2317,  Loss: -0.1086
+[2023-09-05 19:10:05] MOCVRPTrainer.py(79) : Epoch 180/200: Time Est.: Elapsed[12.77h], Remain[1.42h]
+[2023-09-05 19:10:05] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 19:10:05] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 19:14:28] MOCVRPTrainer.py(137) : Epoch 181: Train (100%)  Obj1 Score: 11.6124, Obj2 Score: 2.2296,  Loss: -0.1022
+[2023-09-05 19:14:28] MOCVRPTrainer.py(79) : Epoch 181/200: Time Est.: Elapsed[12.84h], Remain[1.35h]
+[2023-09-05 19:14:28] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 19:18:50] MOCVRPTrainer.py(137) : Epoch 182: Train (100%)  Obj1 Score: 11.6161, Obj2 Score: 2.2286,  Loss: -0.1007
+[2023-09-05 19:18:50] MOCVRPTrainer.py(79) : Epoch 182/200: Time Est.: Elapsed[12.91h], Remain[1.28h]
+[2023-09-05 19:18:50] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 19:23:14] MOCVRPTrainer.py(137) : Epoch 183: Train (100%)  Obj1 Score: 11.5906, Obj2 Score: 2.2287,  Loss: -0.0999
+[2023-09-05 19:23:14] MOCVRPTrainer.py(79) : Epoch 183/200: Time Est.: Elapsed[12.99h], Remain[1.21h]
+[2023-09-05 19:23:14] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 19:27:33] MOCVRPTrainer.py(137) : Epoch 184: Train (100%)  Obj1 Score: 11.5981, Obj2 Score: 2.2277,  Loss: -0.1005
+[2023-09-05 19:27:33] MOCVRPTrainer.py(79) : Epoch 184/200: Time Est.: Elapsed[13.06h], Remain[1.14h]
+[2023-09-05 19:27:33] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 19:31:50] MOCVRPTrainer.py(137) : Epoch 185: Train (100%)  Obj1 Score: 11.6321, Obj2 Score: 2.2268,  Loss: -0.0992
+[2023-09-05 19:31:50] MOCVRPTrainer.py(79) : Epoch 185/200: Time Est.: Elapsed[13.13h], Remain[1.06h]
+[2023-09-05 19:31:50] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 19:31:50] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 19:35:54] MOCVRPTrainer.py(137) : Epoch 186: Train (100%)  Obj1 Score: 11.6265, Obj2 Score: 2.2269,  Loss: -0.0993
+[2023-09-05 19:35:54] MOCVRPTrainer.py(79) : Epoch 186/200: Time Est.: Elapsed[13.20h], Remain[59.60m]
+[2023-09-05 19:35:54] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 19:39:54] MOCVRPTrainer.py(137) : Epoch 187: Train (100%)  Obj1 Score: 11.6262, Obj2 Score: 2.2297,  Loss: -0.0993
+[2023-09-05 19:39:54] MOCVRPTrainer.py(79) : Epoch 187/200: Time Est.: Elapsed[13.26h], Remain[55.32m]
+[2023-09-05 19:39:54] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 19:43:58] MOCVRPTrainer.py(137) : Epoch 188: Train (100%)  Obj1 Score: 11.6406, Obj2 Score: 2.2283,  Loss: -0.0990
+[2023-09-05 19:43:58] MOCVRPTrainer.py(79) : Epoch 188/200: Time Est.: Elapsed[13.33h], Remain[51.05m]
+[2023-09-05 19:43:58] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 19:47:56] MOCVRPTrainer.py(137) : Epoch 189: Train (100%)  Obj1 Score: 11.5954, Obj2 Score: 2.2281,  Loss: -0.0999
+[2023-09-05 19:47:56] MOCVRPTrainer.py(79) : Epoch 189/200: Time Est.: Elapsed[13.40h], Remain[46.78m]
+[2023-09-05 19:47:56] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 19:51:58] MOCVRPTrainer.py(137) : Epoch 190: Train (100%)  Obj1 Score: 11.6246, Obj2 Score: 2.2290,  Loss: -0.0993
+[2023-09-05 19:51:58] MOCVRPTrainer.py(79) : Epoch 190/200: Time Est.: Elapsed[13.46h], Remain[42.52m]
+[2023-09-05 19:51:58] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 19:51:58] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 19:55:58] MOCVRPTrainer.py(137) : Epoch 191: Train (100%)  Obj1 Score: 11.6185, Obj2 Score: 2.2281,  Loss: -0.0987
+[2023-09-05 19:55:58] MOCVRPTrainer.py(79) : Epoch 191/200: Time Est.: Elapsed[13.53h], Remain[38.26m]
+[2023-09-05 19:55:58] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 20:00:11] MOCVRPTrainer.py(137) : Epoch 192: Train (100%)  Obj1 Score: 11.6306, Obj2 Score: 2.2300,  Loss: -0.0986
+[2023-09-05 20:00:11] MOCVRPTrainer.py(79) : Epoch 192/200: Time Est.: Elapsed[13.60h], Remain[34.00m]
+[2023-09-05 20:00:11] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 20:04:13] MOCVRPTrainer.py(137) : Epoch 193: Train (100%)  Obj1 Score: 11.5927, Obj2 Score: 2.2275,  Loss: -0.0988
+[2023-09-05 20:04:13] MOCVRPTrainer.py(79) : Epoch 193/200: Time Est.: Elapsed[13.67h], Remain[29.74m]
+[2023-09-05 20:04:13] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 20:08:11] MOCVRPTrainer.py(137) : Epoch 194: Train (100%)  Obj1 Score: 11.6326, Obj2 Score: 2.2283,  Loss: -0.0990
+[2023-09-05 20:08:11] MOCVRPTrainer.py(79) : Epoch 194/200: Time Est.: Elapsed[13.73h], Remain[25.49m]
+[2023-09-05 20:08:11] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 20:12:19] MOCVRPTrainer.py(137) : Epoch 195: Train (100%)  Obj1 Score: 11.6205, Obj2 Score: 2.2288,  Loss: -0.0993
+[2023-09-05 20:12:19] MOCVRPTrainer.py(79) : Epoch 195/200: Time Est.: Elapsed[13.80h], Remain[21.24m]
+[2023-09-05 20:12:19] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 20:12:19] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 20:16:22] MOCVRPTrainer.py(137) : Epoch 196: Train (100%)  Obj1 Score: 11.6170, Obj2 Score: 2.2297,  Loss: -0.0984
+[2023-09-05 20:16:22] MOCVRPTrainer.py(79) : Epoch 196/200: Time Est.: Elapsed[13.87h], Remain[16.98m]
+[2023-09-05 20:16:22] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 20:20:25] MOCVRPTrainer.py(137) : Epoch 197: Train (100%)  Obj1 Score: 11.6251, Obj2 Score: 2.2281,  Loss: -0.0991
+[2023-09-05 20:20:25] MOCVRPTrainer.py(79) : Epoch 197/200: Time Est.: Elapsed[13.94h], Remain[12.74m]
+[2023-09-05 20:20:25] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 20:24:23] MOCVRPTrainer.py(137) : Epoch 198: Train (100%)  Obj1 Score: 11.6210, Obj2 Score: 2.2282,  Loss: -0.0992
+[2023-09-05 20:24:23] MOCVRPTrainer.py(79) : Epoch 198/200: Time Est.: Elapsed[14.00h], Remain[8.49m]
+[2023-09-05 20:24:23] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 20:28:20] MOCVRPTrainer.py(137) : Epoch 199: Train (100%)  Obj1 Score: 11.6181, Obj2 Score: 2.2250,  Loss: -0.0987
+[2023-09-05 20:28:20] MOCVRPTrainer.py(79) : Epoch 199/200: Time Est.: Elapsed[14.07h], Remain[4.24m]
+[2023-09-05 20:28:20] MOCVRPTrainer.py(67) : =================================================================
+[2023-09-05 20:32:19] MOCVRPTrainer.py(137) : Epoch 200: Train (100%)  Obj1 Score: 11.6147, Obj2 Score: 2.2264,  Loss: -0.0996
+[2023-09-05 20:32:19] MOCVRPTrainer.py(79) : Epoch 200/200: Time Est.: Elapsed[14.14h], Remain[0.00m]
+[2023-09-05 20:32:19] MOCVRPTrainer.py(87) : Saving trained_model
+[2023-09-05 20:32:19] MOCVRPTrainer.py(99) :  *** Training Done *** 
+[2023-09-05 20:32:19] MOCVRPTrainer.py(100) : Now, printing log array...
+[2023-09-05 20:32:19] utils.py(236) : train_score_obj1_list = [12.042173200378418, 11.362714931030274, 11.197110703735351, 11.152374989013673, 11.312744348449707, 11.66364344177246, 11.77698564819336, 11.798050502929687, 11.804683435363769, 11.801982697143554, 11.803410928649903, 11.798929917907715, 11.771096688842773, 11.778834940795898, 11.804233992919922, 11.756662537841796, 11.792057060546876, 11.772730545654296, 11.757649204711914, 11.76504992614746, 11.751473070068359, 11.731650005493163, 11.737850993957519, 11.739701322631836, 11.705353641357421, 11.716604455566406, 11.724020279541016, 11.719808772888184, 11.734799437866211, 11.695038569641113, 11.713022168273925, 11.700115922546386, 11.69164216796875, 11.722014869384765, 11.67364485168457, 11.708111669311524, 11.691508268432617, 11.667031743164063, 11.674977760620116, 11.686290879821778, 11.686909461059571, 11.659984312133789, 11.68868629272461, 11.67947650756836, 11.65260552001953, 11.677884954528809, 11.672213825073243, 11.680328386535644, 11.659853287658692, 11.65636196044922, 11.675942406311036, 11.650102241210938, 11.634051220092774, 11.627933258666992, 11.637729454345703, 11.628414753723144, 11.652717742919922, 11.664810507202148, 11.65138174468994, 11.63527148651123, 11.65762607421875, 11.633445920410157, 11.651694232177734, 11.63046108581543, 11.63240011932373, 11.655156478271484, 11.650476044921875, 11.641775130615235, 11.64614854156494, 11.633409352111816, 11.650280201416015, 11.608981128540039, 11.642000831604005, 11.648900639343262, 11.622095730895996, 11.638389364013673, 11.637706983642579, 11.629564228515624, 11.647800399169922, 11.659100685424805, 11.651992897949219, 11.651267227783203, 11.65936252685547, 11.632417756347657, 11.629753267211914, 11.665561174621581, 11.645064154663086, 11.639331037597657, 11.650545462646484, 11.632103128967286, 11.60629159423828, 11.653788970336914, 11.632053451538086, 11.651397723693847, 11.634464687194825, 11.650838705749512, 11.635667566528321, 11.627238486328125, 11.627611042480469, 11.629664763488769, 11.643443018798829, 11.643501621398926, 11.622271351928712, 11.637620541992188, 11.64249755279541, 11.617850682983399, 11.641867344970704, 11.605710013427734, 11.626665514526367, 11.654896285095214, 11.624193141174317, 11.622642783203124, 11.640516589660644, 11.636963750610352, 11.66224321472168, 11.634811210632325, 11.645878453369141, 11.640829392089843, 11.624481473388672, 11.65815283630371, 11.63926599029541, 11.645225249328613, 11.673019475708008, 11.640700646667481, 11.657875033874511, 11.621774921264649, 11.637993950195312, 11.623416049194336, 11.65021995361328, 11.637614370727539, 11.654592707519532, 11.623530667419434, 11.64274843170166, 11.647132608947754, 11.606904668579102, 11.645831578979493, 11.648363143005371, 11.645041196899413, 11.614743164978027, 11.633230368347167, 11.664339592285156, 11.63630067993164, 11.655334633789062, 11.636667161254882, 11.619800427551269, 11.628426357421874, 11.637138456420898, 11.639431884765624, 11.639565692749024, 11.631808125610352, 11.657625951843261, 11.617200101928711, 11.64664564025879, 11.657001956176758, 11.65249215637207, 11.643258160400391, 11.629773056945801, 11.637767692871094, 11.633125880126952, 11.623737017211914, 11.63970072692871, 11.636035435791015, 11.627869881591797, 11.639813997192382, 11.649597303771973, 11.624258189697265, 11.624430189819336, 11.63506573425293, 11.65181062866211, 11.637450559692383, 11.632866987609864, 11.633816996459961, 11.60038019683838, 11.651253975219726, 11.619316804199219, 11.643485259094238, 11.608661776733399, 11.620620284118653, 11.620523098754882, 11.627437239990234, 11.612417313537598, 11.61608070251465, 11.590575170288085, 11.598099067382812, 11.632056351013183, 11.626537757263183, 11.626204530029296, 11.640617236328126, 11.595365875854492, 11.624607833251954, 11.618511389160156, 11.630626222839355, 11.592731849670411, 11.632552587890626, 11.620474183959962, 11.616968266296388, 11.625098479003906, 11.621020893859864, 11.618139189453125, 11.61471156890869]
+[2023-09-05 20:32:19] utils.py(236) : train_score_obj2_list = [2.4549402673339844, 2.3312688861083983, 2.3015193225097654, 2.2909035581970216, 2.2804045333862306, 2.2743774996185304, 2.2685448126220704, 2.264350314102173, 2.2628860135650637, 2.262262554473877, 2.2621503883361815, 2.2586146044921875, 2.259258780517578, 2.2580816345214845, 2.2555108041381837, 2.2550101870727537, 2.2543432151031495, 2.255572759399414, 2.251940456161499, 2.2521650158691404, 2.2495950537109377, 2.250615395355225, 2.2502431916809083, 2.2504265490722655, 2.250406210861206, 2.248594421005249, 2.2497409258270262, 2.2482671923828126, 2.2491282110595705, 2.2474747297668456, 2.247457601776123, 2.2472728193664553, 2.2478668420410157, 2.2476724501037597, 2.2485636666870117, 2.247228306274414, 2.248151045074463, 2.2487087049102783, 2.248076255645752, 2.2483608589172364, 2.245280181732178, 2.2481921551513673, 2.247051623382568, 2.246783572998047, 2.2464211462402344, 2.24696070640564, 2.2458372121429444, 2.2471883278656004, 2.2450032162475586, 2.245260948944092, 2.243419117202759, 2.2463912422180177, 2.2431960264587403, 2.245745692367554, 2.2447232412719726, 2.2451689488220214, 2.242775676727295, 2.244503414230347, 2.2460672358703615, 2.2449366649627684, 2.244294101715088, 2.2446918836212157, 2.2451057025909424, 2.2441699140930176, 2.2436691096496584, 2.2430990576934815, 2.2449559265899657, 2.2433582608032228, 2.2433842250061033, 2.2442379804992676, 2.2405846820831297, 2.2422349140930176, 2.243253361129761, 2.242888302078247, 2.2419132793426515, 2.237379714050293, 2.2422237171173096, 2.2418368451690673, 2.2434638792419435, 2.2408600463867185, 2.2399151542663573, 2.2402896487426758, 2.2416611505126953, 2.241466600265503, 2.2422125744628905, 2.240660022201538, 2.2409561767578126, 2.240830866317749, 2.2424077803039553, 2.2416008686065676, 2.240882127227783, 2.241326590042114, 2.240428440628052, 2.2401822868347168, 2.2392683156585695, 2.2403883500671387, 2.239592610015869, 2.2409936743164063, 2.239093569793701, 2.2395349565124514, 2.2390148081970214, 2.2393107717895506, 2.240139430999756, 2.2388975370788575, 2.2384219975280764, 2.237742981338501, 2.2388326678466797, 2.239269178314209, 2.238779044799805, 2.2401447746276855, 2.236849055786133, 2.238187670669556, 2.2394292440032957, 2.236002478866577, 2.2374621730041504, 2.236056488189697, 2.237085453033447, 2.236761881637573, 2.237135286254883, 2.2380555785369873, 2.236717201461792, 2.235861368560791, 2.237015799331665, 2.2370037522888184, 2.2353502033996584, 2.23903942199707, 2.238777149810791, 2.2365772662353516, 2.236278751678467, 2.2361764726257323, 2.2374961083984375, 2.237371753082275, 2.236803221282959, 2.2366244678497313, 2.2356480044555664, 2.234731537322998, 2.2342516678619386, 2.2377965405273437, 2.2356523821258545, 2.234178613433838, 2.2353451174926757, 2.2344147583007814, 2.234910119934082, 2.2356540481567384, 2.233142723083496, 2.23184466506958, 2.2361652883911134, 2.235021286468506, 2.2345540699768067, 2.2356585542297363, 2.2349244282531737, 2.2344378037261965, 2.2345822830963136, 2.2340149816131594, 2.2357340303039552, 2.233760454864502, 2.2350846687316896, 2.2336945783996582, 2.2348626095581055, 2.232463671722412, 2.233944063873291, 2.2320696632385255, 2.2339665830993654, 2.23407219871521, 2.2336250159454347, 2.2324275227355956, 2.2317520448303223, 2.233118530960083, 2.2324946815490723, 2.231632730102539, 2.23441489692688, 2.232499418182373, 2.2332401685333254, 2.2333217780303953, 2.231604059753418, 2.2324057179260253, 2.233048037567139, 2.2311085052490234, 2.230344536819458, 2.23173928314209, 2.229564376068115, 2.228631202545166, 2.228727525253296, 2.227665162277222, 2.226813741607666, 2.22692373916626, 2.2296769984436033, 2.2283085125732423, 2.2281480660247803, 2.2289875062561033, 2.2281152143096925, 2.2299574241638185, 2.2274891163635253, 2.2282986235046387, 2.2287546000671385, 2.229675072402954, 2.2280985079956053, 2.2281630894470217, 2.2250264602661134, 2.2264284689331055]
+[2023-09-05 20:32:19] utils.py(236) : train_loss_list = [-0.788857737941742, -0.4384926959037781, -0.3114782936286926, -0.26385000000953673, -0.23940943553447724, -0.22461858832359313, -0.21026939093589783, -0.2018030616235733, -0.19558062366485596, -0.18868303406238557, -0.1847333910036087, -0.17862275916576387, -0.17672358976364136, -0.17366091300964356, -0.17046725075244903, -0.16883844265460968, -0.1639146544456482, -0.16244294227600098, -0.15989253389120103, -0.1598822199010849, -0.15693143867015838, -0.15599071082115173, -0.15592275159835817, -0.15546158648967742, -0.1537578989124298, -0.15140019113540648, -0.15035621610164643, -0.14880517343521119, -0.14929652632713317, -0.14827814031600953, -0.14888034879684447, -0.14762128191947937, -0.14668816585302352, -0.1460443070101738, -0.1458257071328163, -0.1457085876441002, -0.14472255950927734, -0.14345089643001557, -0.1436217910385132, -0.14235354152202606, -0.14260629026412963, -0.14192625589847566, -0.14055754857540131, -0.14065193453788757, -0.1390826315832138, -0.13972396973609924, -0.13870574930429458, -0.1377372966814041, -0.13719805136680602, -0.13750494567394256, -0.13722958854675293, -0.1364880088043213, -0.13631472669124603, -0.13555030391216277, -0.13638159954309464, -0.13507366562128068, -0.13421478853702545, -0.1335685033798218, -0.13399755150318146, -0.13294906607627868, -0.1324821185493469, -0.13269178067922593, -0.13335830142498017, -0.13241513377189637, -0.13157267446517945, -0.13111032230377198, -0.13155573629379272, -0.12925315220355987, -0.1302850158858299, -0.12942258479595184, -0.12952849042415618, -0.12907089301109315, -0.12799839480161668, -0.12879896826982498, -0.12839441593885423, -0.12792640427112578, -0.12809619795560837, -0.1270250279712677, -0.12721481348514557, -0.1271030448293686, -0.12808330192565917, -0.12651653259277343, -0.12615724546909332, -0.1267634791469574, -0.12632074657917022, -0.12555888095378875, -0.12544133992910386, -0.12581369760990144, -0.12459387007713318, -0.12438562787532806, -0.12443884758472443, -0.12388781952857972, -0.1233427553844452, -0.12314458370685577, -0.12296382929801941, -0.12186792585849762, -0.12224931804180145, -0.12290213897705078, -0.12345485673427582, -0.12309254119873046, -0.12218504892110825, -0.1217154841518402, -0.12256026821613311, -0.12091839161157608, -0.12094418542146683, -0.11971651434898377, -0.12090711544513702, -0.12015871187210082, -0.11986212691307067, -0.12066170880794524, -0.11889243436336518, -0.11945512460231782, -0.11897371433973312, -0.1184401542520523, -0.11898804322242737, -0.11984010802745819, -0.11871442970752716, -0.1187124353480339, -0.11911190454721451, -0.1171340676856041, -0.11810557673692704, -0.11863730501651763, -0.11727920509099961, -0.11755191756248475, -0.11671462041378021, -0.11748627877235412, -0.11637433699131013, -0.11657685678482056, -0.11592202050209045, -0.11665256717205047, -0.11678121360063552, -0.11639348772525787, -0.11620932983398438, -0.11618762024402618, -0.11562137229919434, -0.11438329840421677, -0.1147426884508133, -0.11510149630546569, -0.11422565542697906, -0.1135674218249321, -0.11457978415727615, -0.11434267126798629, -0.11357107478141784, -0.11387331156253815, -0.11364030965566635, -0.1138920062327385, -0.11293997605800629, -0.11326281660318374, -0.11300501120328903, -0.11191911577939988, -0.11221194542407989, -0.11213806379318238, -0.11243443513154984, -0.11114730791091919, -0.11200142099142074, -0.11224560631513596, -0.11163837821245194, -0.11108598630905152, -0.11168849037647248, -0.1116109651017189, -0.11044028827667236, -0.11066963603496552, -0.11125150461196899, -0.1110589185500145, -0.11088081634998322, -0.11033557372331619, -0.11003838230848312, -0.11039088621377945, -0.10962738878726959, -0.11000155901670455, -0.11012513758897781, -0.11005869379281998, -0.1097853963804245, -0.10983896216869354, -0.10973628884315491, -0.10852680630207062, -0.10912236381292344, -0.10911203676700593, -0.10873245390176774, -0.10858068091392517, -0.10215598766326904, -0.10066942123889923, -0.09985205498218537, -0.10047007513046265, -0.09917318035840988, -0.09931878176212311, -0.09926827615737915, -0.09900767162322999, -0.09990449439525605, -0.0992990485215187, -0.09867110220909119, -0.0986088782787323, -0.09878845746517181, -0.09899476802825928, -0.09928270866632462, -0.0983719434094429, -0.09911359410524369, -0.09921100075006485, -0.09867608733892441, -0.09964920274734497]
