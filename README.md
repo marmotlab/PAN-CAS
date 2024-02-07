@@ -35,26 +35,3 @@ If our work is helpful for your research, please cite our paper:
   year={2023}
 }
 ```
-
-If you find our code useful, please also consider citing the POMO paper and PMOCO paper:
-
-```
-@inproceedings{Kwon2020pomo,
-  title = {POMO: Policy Optimization with Multiple Optima for Reinforcement Learning},
-  author = {Yeong-Dae Kwon, Jinho Choo, Byoungjip Kim, Iljoo Yoon, Youngjune Gwon, Seungjai Min},
-  booktitle = {Advances in Neural Information Processing Systems},
-  pages = {21188--21198},
-  volume = {33},
-  year = {2020}
-}
-```
-
-```
-@inproceedings{lin2022pareto,
-  title={Pareto Set Learning for Neural Multi-Objective Combinatorial Optimization},
-  author={Xi Lin, Zhiyuan Yang, Qingfu Zhang},
-  booktitle={International Conference on Learning Representations},
-  year={2022},
-  url={https://openreview.net/forum?id=QuObT9BTWo}
-}
-```
